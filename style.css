@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+padding: 0;
+margin: 0;
+border: none;
+outline: none;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: 'poppins' ,sans-serif; */
+    background:#18181B;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    width: 80%;
+}
+
+
+nav img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+nav .nav-links {
+    display: flex;
+align-items: center;
+
+}
+
+nav .nav-links li{
+    list-style: none;
+    margin-left: 5rem;
+    letter-spacing: 2px;
+}
+nav .nav-links li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+position: relative;
+padding-bottom: 20px;
+}
+nav .nav-links li a::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 0;
+    background: #0b527a;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+nav .nav-links li a:hover::after{
+    width: 100%;
+}
+.btn{
+    padding: 1rem; 
+    font-size: 1rem;
+    color: #fff;
+    background-color:#1714cf;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.btn:hover{
+    background: #2b28cc;
+}
+.contain{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+.container{
+    max-width: 1200px;
+    display: flex;
+  
+ 
+}
+header{
+    margin: 150px auto 0 auto;
+    width: 100%;
+}
+.container .img-head{
+    max-width: 200px;
+    height: 200px;
+}
+.container img{
+ border-radius: 100%;
+}
+header h3 {
+font-size: 1.3rem;
+color: #ccc;
+margin-bottom: 1.8rem;
+}
+header h1{
+    color: #fff;
+    margin-bottom: 2rem;
+    font-size: 3.6rem;
+}
+.blur{
+    position: absolute;
+    box-shadow: 0 0 100px 50px #1d4ed8;
+    z-index: -100;
+}
+header h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+}
+header p{
+    color: #fff;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+.header{
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 35px;
+    margin-bottom:70px ;
+}
+.features {
+    display: flex;
+justify-content: center;
+}
+.features .card{
+    padding: 2rem 0.5rem;
+    background: #27272a;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    max-width: 20%;
+    transition: 0.3s;
+}
+.features .card:hover{
+    border-color: #fff;
+    background: #323232;
+}
+.features .card h3{
+    margin-bottom:0.5rem ;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+}
+.features .card p{
+    color: #ccc;
+    margin-bottom: 1.3rem;
+}
+.features .card a{
+    text-decoration: none;
+color: #fff;
+transition: 0.3s;
+}
+.features .card a:hover{
+    color: #1e40af;
+
+}
+.features .card span{
+    display: inline-block;
+    padding: 2px 9px ;
+    background: #1e40af;
+    border-radius: 5px;
+    font-size: 1.75rem;
+    margin-bottom: 18px;
+}
+.sub-header{
+    text-align: center;
+    color: #ccc;
+    
+}
+.plans{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.plans .card{
+    background: #27272a;
+    border-radius: 10px;
+   width: 20%;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+.plans .card:hover{
+    background: #323232;
+    border-color:#fff;
+}
+.plans .card .content{
+    margin-bottom: 2rem;
+    flex: 1;
+}
+.plans .content h4{
+    font-size: 1.75rem;
+    color: #ccc;
+    margin-bottom:1rem;
+    font-weight: 600;
+}
+.plans .content h3{
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    border-bottom: 2px dashed #fff;
+    padding-bottom: 30px;
+}
+.plans .content p{
+    margin-bottom: 5px;
+    color: #fff;
+}
+.plans .content p i{
+    margin-right: 5px;
+}
+.plans .card button{
+/* padding:1rem 2rem; */
+margin-top: 2rem;
+background: transparent;
+font-size: 1.3rem;
+border: 2px #fff solid;
+}
+.plans .card button:hover{
+    background-color:#1e40af;
+    border-color: #1e40af;
+}
+/************ Footer /****/ 
+.info{
+    display: flex;
+}
+footer img{
+    max-width:100px;
+    border-radius: 100%;
+    margin-bottom:2rem ;
+}
+.co{
+    margin-left: 8rem;
+    display: block;
+    align-items: center;
+}
+.column h4{
+    margin-bottom: 2rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.column a{
+    display: block;
+    text-decoration: none;
+    color: #ccc;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+}
+.socials{
+    margin-top: 5rem;
+}
+.socials a{
+    display: inline-block;
+    margin-left: 1rem;
+    border: 1px #ccc solid;
+    border-radius: 100%;
+    font-size: 1.25rem;
+    transition: 0.3s;
+    padding: 5px 10px 5px;
+}
+.socials a:hover{
+    color: #1e40af;
+    border-color: #1e40af ;
+}
+.column a:hover{
+    color: #1d4ed8;
+}
+.column p{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.copyright {
+    width: 1200px;
+    display: block; 
+    text-align: center;
+    margin-top: 6rem;
+    color: #fff;
+}
+/* الشاشات المتوسطة (مثل الأجهزة اللوحية) */
+@media (max-width: 1024px) {
+    nav {
+        width: 90%;
+    }
+
+    .nav-links li {
+        margin-left: 2rem;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features .card {
+        max-width: 80%;
+        margin: 2rem 0;
+    }
+
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plans .card {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}
+
+/* الشاشات الصغيرة (مثل الهواتف المحمولة) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    nav img {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .header {
+        font-size: 1.5rem;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .features .card, .plans .card {
+        max-width: 90%;
+        margin: 1rem 0;
+    }
+
+    .plans .content h3 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .co {
+        margin-left: 0;
+    }
+
+    .socials a {
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+}
+
+/* الشاشات الأصغر (مثل الهواتف المحمولة الصغيرة) */
+@media (max-width: 480px) {
+    .container .img-head {
+        max-width: 150px;
+        height: 150px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h3 {
+        font-size: 1rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .features .card span, .features .card h3, .plans .content h4 {
+        font-size: 1rem;
+    }
+
+    .plans .content h3 {
+        font-size: 1.2rem;
+    }
+
+    .plans .card button {
+        font-size: 1rem;
+    }
+}
